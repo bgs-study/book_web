@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="/css/login.css" type="text/css">
+    <%- include('../partials/head') %>
+  </head>
+  
+  <body>
+    <%- include('../partials/nav') %>
+    
+      <h2 class="login_title">SIGN UP</h2>
+      
+      <form class="login_form" action="/Auth/signup" method="post">
+          <div class="login_all">
+            <div>
+              <label for="loginId">ID</label>
+              <input type="text" id="loginId" name="loginId" placeholder="ID" >
+            </div>
+            <div>          
+              <label for="password">PW</label>
+              <input type="password" id="password" name="password" placeholder="Password" >
+            </div>
+            <input class="btn btn-default" type="submit" value="회원가입">
+          </div>
+      </form>
+      <a href="/Auth/login" class="signup2login"> > 로그인 </a>
+      <footer class="footer">
+        <%- include('../partials/footer') %>  
+      </footer>
+    </section>
+  </body>

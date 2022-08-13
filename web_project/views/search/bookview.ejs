@@ -1,0 +1,36 @@
+<head>
+    <%- include('../partials/head') %>
+    <script>
+        function load(){
+            window.location.reload();
+        }
+    </script>
+
+</head>
+
+<body>
+    <%- include('../partials/nav') %>
+    
+    <div id ="card-form" >   
+            <button onclick="load()"> load </button>   
+            <% books.forEach(function(book) { %>
+      
+                <div class="card" style="width: 18rem; display: inline-block; text-align: center;">
+                 <img src="<%= book.image %>" class="card-img-top" alt="..." style="height: 22rem; ">
+                 <div class="card-body">
+                    <h5 class="card-title"><%= book.title %></h5>
+                    <p class="card-text"><%= book.author %></p>
+                    <p class="card-text">${description}</p>
+                    <a href="<%= book.link %>" class="btn btn-primary">Go Link</a>
+                 </div>
+                 </div> 
+            
+            <% }) %>
+
+    </div>
+
+</body>
+
+<footer class="footer">
+    <%- include('../partials/footer') %>  
+</footer>

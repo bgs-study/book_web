@@ -1,0 +1,25 @@
+<head>
+      <%- include('../partials/head') %>
+  </head>
+  
+<body>
+        <%- include('../partials/nav') %>
+    <form class="search"  action="/searchs/bookview" method="post">
+    <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" id="title" name="title" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+               <input class="btn btn-default" type="submit" value="Go!">              
+            </span>
+          </div><!-- /input-group -->          
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
+
+</body>
+
+
+<footer class="footer">
+  <%- include('../partials/footer') %>  
+</footer>

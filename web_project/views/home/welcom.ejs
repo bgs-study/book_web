@@ -1,0 +1,23 @@
+<!-- views/home/welcome.ejs -->
+<head>
+    <link rel="stylesheet" href="/css/welcom_style.css" type="text/css">
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <section>
+        <%- include('../partials/nav') %>
+        <header>
+            <h1>WEBOOKER</h1>
+        </header>
+
+        <section>
+                <P>WEBOOKER에 오신 것을 환영합니다.</p>
+                <p>WEBOKKER은 도서 추천과 기록에 특화되어 있습니다.</p>
+                <p>여러분의 즐거운 독서생활을 응원합니다!</p>
+                <div class="img_block"><img class="main_img" src="/img/main_book.jpg" alt="main_img"></div>
+        </section>
+        <footer class="footer">
+        <%- include('../partials/footer') %>  
+        </footer>
+    </section>
+</body>
